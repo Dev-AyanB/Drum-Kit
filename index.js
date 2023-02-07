@@ -8,12 +8,11 @@ for (let index = 0; index < numberofDrumButtons; index++) {
         animation(buttonInnerHtml);
     });
 }
-document.addEventListener("keydown", function (event)
-{
+document.addEventListener("keydown", function (event) {
     makeSound(event.key);
     animation(event.key);
 
-})
+});
 function makeSound(key) {
     switch (key) {
         case 'w':
